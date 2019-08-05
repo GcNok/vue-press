@@ -1,1 +1,5 @@
-# vue-press
+---
+home: true
+---
+ 
+<PostList />
