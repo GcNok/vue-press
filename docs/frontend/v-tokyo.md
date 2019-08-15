@@ -2,7 +2,10 @@
 title: v-tokyo
 date: 2019-07-29
 description: v-tokyoでのLTメモ
+author: shiji
+authorImage: /gin.png
 ---
+<Author />
 # v-tokyo
 
 ## DMM GAMES Ventures を Nuxt でリニューアルした話

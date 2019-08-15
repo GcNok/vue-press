@@ -2,7 +2,10 @@
 title: ChromeTechTalkNight 14
 date: 2019-07-26
 description: AMP系LTメモ
+author: shiji
+authorImage: /gin.png
 ---
+<Author />
 # ChromeTechTalkNight#14
 AMPScript で書いた js マルチスレッドで動く
 AMP は Google 検索時に既にレンダリングの準備をしているため、高速なページが実現できる

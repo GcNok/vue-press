@@ -2,7 +2,10 @@
 title: AWS Personalizeのハンズオンに参加しました
 date: 2019-07-26
 description: AWS Personalizeのハンズオンに参加した時のメモ
+author: shiji
+authorImage: /gin.png
 ---
+<Author />
 # AWS Personalize
 
 ## 機械学習と AI の違い

@@ -5,8 +5,10 @@ description: VuePress x Firebaseでブログ作成に挑戦してみました。
 categories:
     - Vue.js
 footer: SmartShopping
+author: shiji
+authorImage: /gin.png
 ---
-
+<Author />
 # VuePress x Firebase で作るエンジニアブログ
 
 ## VuePress とは

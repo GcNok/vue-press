@@ -2,7 +2,10 @@
 title: ng-japan
 date: 2019-07-13
 description: ng-japanに参加した時のLTメモ
+author: shiji
+authorImage: /gin.png
 ---
+<Author />
 # ng-japan
 
 ## bitbank
