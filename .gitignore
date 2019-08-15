@@ -65,4 +65,4 @@ node_modules/
 .env
 
 # vuePress compile files
-.vuepress/dist
+docs/.vuepress/dist
