@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'エンジニアブログ',
+    title: 'Smart Shopping',
     description: 'スマートショッピングのエンジニアブログです',
     head: [
         ['link', {
@@ -9,29 +9,20 @@ module.exports = {
         }]
     ],
     themeConfig: {
-
         nav: [{
-                text: 'トップ',
+                text: 'ホーム',
                 link: '/'
             }, {
                 text: '会社概要',
-                link: '/corporaite'
+                link: 'https://smartshopping.co.jp/overview/'
             },
             {
-                text: '採用',
-                link: '/guide/'
+                text: '採用情報',
+                link: 'https://smartshopping.co.jp/recruiting/'
             },
             {
-                text: 'アクセス',
-                items: [{
-                        text: 'Chinese',
-                        link: '/language/chinese'
-                    },
-                    {
-                        text: 'Japanese',
-                        link: '/language/japanese'
-                    }
-                ]
+                text: 'ニュース',
+                link: 'https://smartshopping.co.jp/category/news/'
             }
         ],
         sidebar: [{
@@ -46,7 +37,13 @@ module.exports = {
             {
                 title: 'サーバーサイド',
                 children: [
-                    '/serverside/docker-study',
+                    '/serverside/P++',
+                ]
+            },
+            {
+                title: 'インフラ',
+                children: [
+                    '/infra/AWSPersonalize'
                 ]
             }
         ]
