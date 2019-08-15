@@ -1,4 +1,8 @@
-
+---
+title: ng-japan
+date: 2019-07-13
+description: ng-japanに参加した時のLTメモ
+---
 # ng-japan
 
 ## bitbank
@@ -12,8 +16,6 @@ Angular 製
 飲食向け予約管理
 
 ## MicroFrontend
-
-##
 
 ### Lifecycle
 

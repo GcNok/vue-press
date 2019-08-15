@@ -1,3 +1,12 @@
+---
+title: VuePress x Firebase で作るエンジニアブログ
+date: 2019-08-15
+description: VuePress x Firebaseでブログ作成に挑戦してみました。
+categories:
+    - Vue.js
+footer: SmartShopping
+---
+
 # VuePress x Firebase で作るエンジニアブログ
 
 ## VuePress とは
@@ -26,7 +35,55 @@ echo '# Hello VuePress' > docs/README.md
 }
 ```
 
-## ナビバー
+## ナビバーの実装
+config.jsに以下の記述を追加する
+```js
+themeConfig: {
+        nav: [{
+                text: 'ホーム',
+                link: '/'
+            }, {
+                text: '会社概要',
+                link: 'https://smartshopping.co.jp/overview/'
+            },
+            {
+                text: '採用情報',
+                link: 'https://smartshopping.co.jp/recruiting/'
+            },
+            {
+                text: 'ニュース',
+                link: 'https://smartshopping.co.jp/category/news/'
+            }
+        ],
+}
+```
 
 
-## サイドバー
+## サイドバーの実装
+config.jsに以下の記述を追加する
+```js
+themeConfig: {
+    sidebar: [{
+                title: 'フロントエンド',
+                children: [
+                    '/frontend/v-tokyo',
+                    '/frontend/ng-japan',
+                    '/frontend/ChromeTechTalkNight',
+                    '/frontend/vue-press',
+                ]
+            },
+            {
+                title: 'サーバーサイド',
+                children: [
+                    '/serverside/P++',
+                ]
+            },
+            {
+                title: 'インフラ',
+                children: [
+                    '/infra/docker-meetup',
+                ]
+            }
+        ]
+}
+```

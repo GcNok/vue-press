@@ -1,3 +1,8 @@
+---
+title: v-tokyo
+date: 2019-07-29
+description: v-tokyoでのLTメモ
+---
 # v-tokyo
 
 ## DMM GAMES Ventures を Nuxt でリニューアルした話

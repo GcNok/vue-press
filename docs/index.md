@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo_m.png
+heroImage: /logo.png
 actionText: About Engineering
 actionLink: /frontend/
 features:
@@ -12,15 +12,5 @@ features:
     details: AWS、Azure
 footer: SmartShopping
 ---
-# エンジニアブログ
-::: tip ポイント
-test
-:::
-
-::: warning 要注意
-test
-:::
-
-::: danger 注意ポイント
-test
-:::
+# 記事一覧
+<PostList />
