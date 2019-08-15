@@ -11,7 +11,6 @@
 export default {
     computed: {
         posts() {
-            console.log(this.$site.pages);
             return this.$site.pages
                 // docsディレクトリ以下を投稿記事一覧表示の対象とする
                 .filter(post => post.path.match(/(\/.+\/.+)/))
