@@ -45,6 +45,13 @@ module.exports = {
                 children: [
                     '/infra/AWSPersonalize'
                 ]
+            },
+            {
+                title: 'その他',
+                children: [
+                    '/other/vscode'
+                ]
+
             }
         ]
     }

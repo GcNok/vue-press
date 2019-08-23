@@ -9,8 +9,10 @@ features:
   - title: サーバーサイド
     details: Go、Laravel、CakePHP
   - title: インフラ
-    details: AWS、Azure
+    details: AWS、Azure、Kubernetes
 footer: SmartShopping
 ---
-# 記事一覧
+
+# 新着記事
+
 <PostList />
