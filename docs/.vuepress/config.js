@@ -9,6 +9,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
+        lastUpdated: 'Last Updated',
         nav: [{
                 text: 'ホーム',
                 link: '/'
@@ -29,6 +30,7 @@ module.exports = {
                 title: 'フロントエンド',
                 children: [
                     '/frontend/v-tokyo',
+                    '/frontend/NuxtMeetup_9',
                     '/frontend/ng-japan',
                     '/frontend/ChromeTechTalkNight',
                     '/frontend/vue-press',

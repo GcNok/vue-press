@@ -13,6 +13,6 @@ features:
 footer: SmartShopping
 ---
 
-# 新着記事
+# 記事一覧
 
 <PostList />

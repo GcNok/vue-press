@@ -1,10 +1,11 @@
 ---
-title: ChromeTechTalkNight 14
+title: ChromeTechTalkNight#14
 date: 2019-07-26
-description: AMP系LTメモ
+description: ChromeTechTalkNight#14に参加した時の備忘録
 author: shiji
 authorImage: /gin.png
 ---
+
 <Author />
 # ChromeTechTalkNight#14
 AMPScript で書いた js マルチスレッドで動く
