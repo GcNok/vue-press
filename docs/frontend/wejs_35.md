@@ -1,3 +1,13 @@
+---
+title: We are JavaScript
+date: 2019-08-27
+description: We Are JavaScripters! @35th【初心者歓迎・LT 会】
+categories:
+  - js
+footer: SmartShopping
+author: shiji
+authorImage: /gin.png
+---
 # We Are JavaScripters! @35th【初心者歓迎・LT 会】
 
 ## サイボウズ
