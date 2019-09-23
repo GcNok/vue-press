@@ -66,3 +66,4 @@ node_modules/
 
 # vuePress compile files
 .vuepress/dist
+docs/.vuepress/dist
