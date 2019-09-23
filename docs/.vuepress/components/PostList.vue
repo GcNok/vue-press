@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div v-for="post in posts">
+    <div v-for="displayPage in displayPages">
       <h2>
-        <a class="post-title" v-bind:href="post.path">{{post.title}}</a>
+        <a class="post-title" v-bind:href="displayPage.path">{{displayPage.title}}</a>
       </h2>
-      <p>{{post.frontmatter.description}}</p>
-      <a class="read-more" v-bind:href="post.path">続きを読む</a>
+      <p>{{displayPage.frontmatter.description}}</p>
+      <a class="read-more" v-bind:href="displayPage.path">続きを読む</a>
     </div>
     <div class="page-nation-wrapper">
       <div
@@ -26,27 +26,28 @@ export default {
   },
   computed: {
     posts() {
-      let displayPages = this.$site.pages
+        return this.$site.pages
         // docsディレクトリ以下を投稿記事一覧表示の対象とする
-        .filter(post => post.path.match(/(\/.+\/.+)/))
+        .filter(post => post.path.match(/(\/.+\/.+\.html)/))
         // dateに設定した日付の降順にソートする
         .sort(
           (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         );
-
+    },
+    displayPages() {
       if (this.currentPageNum === 1) {
-        return displayPages.slice(
+        return this.posts.slice(
           this.currentPageNum - 1,
           this.currentPageNum * 5
         );
       }
-      return displayPages.slice(
+      return this.posts.slice(
         (this.currentPageNum - 1) * 5,
         this.currentPageNum * 5
       );
     },
     totalPageNum() {
-      return Math.ceil(this.$site.pages.length / 5);
+      return Math.ceil(this.posts.length / 5);
     },
     endPageNum() {
       if (this.currentPageNum + 2 < this.totalPageNum) {
@@ -57,7 +58,7 @@ export default {
     displayPageNumArray() {
       const pageNumArray = [];
       const startPageNum = this.currentPageNum -2;
-      for (let pageNum = startPageNum ;pageNum < this.endPageNum;pageNum++) {
+      for (let pageNum = startPageNum ;pageNum <= this.endPageNum;pageNum++) {
         if (pageNum > 0) {
           pageNumArray.push(pageNum);
         }
