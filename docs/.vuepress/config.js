@@ -63,6 +63,7 @@ module.exports = {
         }
     },
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
+        linkify: true
     }
 }
