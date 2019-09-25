@@ -55,6 +55,11 @@ module.exports = {
                 ]
 
             }
-        ]
+        ],
+        algolia: {
+            appId: "HGN4J6EW6E",
+            apiKey: "f9bd7d98b7c512f47857dba7207a4d8b",
+            indexName: "vuepress"
+        }
     }
 }
