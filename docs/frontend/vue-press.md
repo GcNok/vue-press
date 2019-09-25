@@ -213,9 +213,42 @@ themeConfig: {
 - フィールドの重み付けなどのパラメータ調整をコード変えずに対応可能
 - プランが柔軟
 
-#### こんな感じに表示されるらしい
+### Algoliaの設定方法
+https://qiita.com/uphy/items/15d51ffbb13afda03f9f
 
-<img :src="$withBase('/algolia.png')" alt="algolia">
+#### インデックスの設定例
+```json
+{
+    "index_name": "vuepress",
+    "start_urls": [
+        "https://vue-press-a735c.firebaseapp.com/"
+    ],
+    "stop_urls": [],
+    "selectors": {
+        "lvl0": {
+            "selector": "theme-default-content",
+            "global": true,
+            "default_value": "Documentation"
+        },
+        "lvl1": "h1",
+        "lvl2": "h2",
+        "lvl3": "h3",
+        "lvl4": "h4",
+        "lvl5": "h5",
+        "text": "p, li",
+        "lang": {
+            "selector": "/html/@lang",
+            "type": "xpath",
+            "global": true
+        }
+    },
+    "custom_settings": {
+        "attributesForFaceting": [
+            "lang"
+        ]
+    }
+}
+```
 
 ### Algolia の導入例
 

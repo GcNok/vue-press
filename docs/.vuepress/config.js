@@ -15,15 +15,15 @@ module.exports = {
                 link: '/'
             }, {
                 text: '会社概要',
-                link: 'https://smartshopping.co.jp/overview/'
+                link: 'https://smartshopping.co.jp/AboutUs'
             },
             {
                 text: '採用情報',
-                link: 'https://smartshopping.co.jp/recruiting/'
+                link: 'https://smartshopping.co.jp/Recruitment'
             },
             {
                 text: 'ニュース',
-                link: 'https://smartshopping.co.jp/category/news/'
+                link: 'https://smartshopping.co.jp/News'
             }
         ],
         sidebar: [{
@@ -55,6 +55,15 @@ module.exports = {
                 ]
 
             }
-        ]
+        ],
+        algolia: {
+            appId: "HGN4J6EW6E",
+            apiKey: "f9bd7d98b7c512f47857dba7207a4d8b",
+            indexName: "vuepress"
+        }
+    },
+    markdown: {
+        lineNumbers: true,
+        linkify: true
     }
 }
